@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundwhite"
+    tools:context=".LogbookFragment">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/gilroybold"
+        android:text="Logbook"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/tickerSearchText"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="130dp"
+        android:background="@drawable/background_input"
+        android:drawableLeft="@drawable/ic_search"
+        android:drawablePadding="7dp"
+        android:ems="10"
+        android:hint="Enter Ticker Symbol"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/showLogbookButton"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/background_button"
+        android:fontFamily="@font/montserratbold"
+        android:letterSpacing="0.1"
+        android:text="Show Record"
+        android:textColor="@color/backgroundwhite"
+        android:textSize="12dp"
+        app:layout_constraintStart_toEndOf="@+id/tickerSearchText"
+        app:layout_constraintTop_toTopOf="@id/tickerSearchText" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/recordTransactionButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/background_button"
+        android:fontFamily="@font/montserratbold"
+        android:letterSpacing="0.1"
+        android:text="Record Transaction"
+        android:textColor="@color/backgroundwhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerViewLogBook" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/gilroybold"
+        android:text="Transactions"
+        android:textColor="@color/realblack"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tickerSearchText" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewLogBook"
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+</androidx.constraintlayout.widget.ConstraintLayout>

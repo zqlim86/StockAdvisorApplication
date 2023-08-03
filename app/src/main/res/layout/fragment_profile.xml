@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundwhite"
+    tools:context=".ProfileFragment">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="44dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="160dp"
+        android:src="@drawable/profile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/profileNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="94dp"
+        android:fontFamily="@font/montserratsemibold"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/montserratmedium"
+        android:text="Email:"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profileNameTextView" />
+
+
+    <TextView
+        android:id="@+id/emailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/montserratmedium"
+        android:text=""
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/textView20"
+        app:layout_constraintTop_toBottomOf="@+id/profileNameTextView" />
+
+    <!-- This is a view widget with an ID of view -->
+    <!-- The background of this view is @color/grey -->
+    <View
+        android:id="@+id/view"
+        android:layout_width="320dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="46dp"
+        android:background="@color/grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <!-- Id of this TextView is contactUsButton -->
+    <!-- The textColor of this is @color/backgroundwhite -->
+    <!-- It is using the background of @drawable/background_button -->
+    <!--  The fontFamily used is @font/montserratbold -->
+    <!-- It is properly constraint vertically and horizontally, so that it doesn't go to the wrong position during runtime. -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/contactUsButton"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="56dp"
+        android:background="@drawable/background_button"
+        android:fontFamily="@font/montserratsemibold"
+        android:text="Contact Us"
+        android:textColor="@color/backgroundwhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <!-- Id of this TextView is findUsButton -->
+    <!-- The textColor of this is @color/backgroundwhite -->
+    <!-- It is using the background of @drawable/background_button -->
+    <!--  The fontFamily used is @font/montserratbold -->
+    <!-- It is properly constraint vertically and horizontally, so that it doesn't go to the wrong position during runtime. -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/findUsButton"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="56dp"
+        android:background="@drawable/background_button"
+        android:fontFamily="@font/montserratsemibold"
+        android:text="Find Us"
+        android:textColor="@color/backgroundwhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contactUsButton" />
+
+    <!-- Id of this TextView is logOutButton -->
+    <!-- The textColor of this is @color/backgroundwhite -->
+    <!-- It is using the background of @drawable/background_button -->
+    <!--  The fontFamily used is @font/montserratbold -->
+    <!-- It is properly constraint vertically and horizontally, so that it doesn't go to the wrong position during runtime. -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/logOutButton"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="56dp"
+        android:background="@drawable/background_button"
+        android:fontFamily="@font/montserratsemibold"
+        android:text="Log Out"
+        android:textColor="@color/backgroundwhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/findUsButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

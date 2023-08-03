@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundwhite"
+    tools:context=".loginActivity">
+
+    <!-- Id of this TextView is textView -->
+    <!-- The textColor of this is @color/backgroundwhite -->
+    <!-- The fontFamily of this is @font/montserratbold -->
+    <!-- It is properly constraint vertically and horizontally, so that it doesn't go to the wrong position during runtime. -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/gilroybold"
+        android:text="Welcome Back"
+        android:textColor="@color/realblack"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.238" />
+
+    <!-- Id of this TextView is textView16 -->
+    <!-- The textColor of this is @color/backgroundwhite -->
+    <!-- The fontFamily of this is @font/montserratmedium -->
+    <!-- It is properly constraint vertically and horizontally, so that it doesn't go to the wrong position during runtime. -->
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginEnd="83dp"
+        android:fontFamily="@font/gilroyregular"
+        android:text="Sign in to your StockX account."
+        android:textColor="@color/realblack"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+    <!-- Id of this TextView is registerName -->
+    <!-- The textColor of this is @color/lightpurple -->
+    <!-- The textColorHint of this is also @color/lightpurple -->
+    <!-- It is using the background of @drawable/background_input -->
+    <!-- There is drawable on the left side, using the @drawable/ic_person2 -->
+    <!-- It is properly constraint vertically and horizontally, so that it doesn't go to the wrong position during runtime. -->
+    <EditText
+        android:id="@+id/registerName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/background_input"
+        android:drawableLeft="@drawable/ic_person2"
+        android:drawablePadding="7dp"
+        android:ems="10"
+        android:hint="Enter Email"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:fontFamily="@font/gilroymedium"
+        android:textColor="@color/black"
+        android:textColorHint="@color/inputhint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <!-- Id of this TextView is loginPassword -->
+    <!-- The textColor of this is @color/lightpurple -->
+    <!-- The textColorHint of this is also @color/lightpurple -->
+    <!-- It is using the background of @drawable/background_input -->
+    <!-- There is drawable on the left side, using the @drawable/ic_security2 -->
+    <!-- It is properly constraint vertically and horizontally, so that it doesn't go to the wrong position during runtime. -->
+    <EditText
+        android:id="@+id/loginPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/background_input"
+        android:drawableLeft="@drawable/ic_security2"
+        android:drawablePadding="7dp"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:fontFamily="@font/gilroymedium"
+        android:textColor="@color/black"
+        android:textColorHint="@color/inputhint"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerName" />
+
+    <!-- Id of this TextView is loginButton -->
+    <!-- The textColor of this is @color/backgroundwhite -->
+    <!-- It is using the background of @drawable/background_button -->
+    <!--  The fontFamily used is @font/montserratbold -->
+    <!-- It is properly constraint vertically and horizontally, so that it doesn't go to the wrong position during runtime. -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/loginButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/background_button"
+        android:fontFamily="@font/gilroybold"
+        android:letterSpacing="0.1"
+        android:text="Login"
+        android:textColor="@color/backgroundwhite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linkRegister" />
+
+    <!-- Id of this TextView is linkRegister -->
+    <!-- The textColor of this is @color/backgroundwhite -->
+    <!-- The textStyle of this is italic -->
+    <!-- It is properly constraint vertically and horizontally, so that it doesn't go to the wrong position during runtime. -->
+    <TextView
+        android:id="@+id/linkRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:text="Don't have an account? Sign Up!"
+        android:textColor="@color/realblack"
+        android:textSize="12sp"
+        android:fontFamily="@font/gilroymediumitalic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginPassword" />
+
+
+    <!-- Id of this TextView is linkRegister -->
+    <!-- The textColor of this is @color/backgroundwhite -->
+    <!-- The textStyle of this is italic -->
+    <!-- It is properly constraint vertically and horizontally, so that it doesn't go to the wrong position during runtime. -->
+    <TextView
+        android:id="@+id/linkForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="266dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="32dp"
+        android:text="Forgot Password?"
+        android:textColor="@color/realblack"
+        android:textSize="12sp"
+        android:fontFamily="@font/gilroymediumitalic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginPassword" />
+
+    <!-- Id of this TextView is forgotPasswordProgressBar -->
+    <!-- It's visibility is set to invisible -->
+    <!-- It is properly constraint vertically and horizontally, so that it doesn't go to the wrong position during runtime. -->
+    <ProgressBar
+        android:id="@+id/loginProgressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="96dp"
+        android:layout_height="82dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

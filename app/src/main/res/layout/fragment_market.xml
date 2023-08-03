@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundwhite"
+    tools:context=".MarketFragment">
+
+
+    <EditText
+        android:id="@+id/tickerEditText"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="130dp"
+        android:background="@drawable/background_input"
+        android:drawableLeft="@drawable/ic_search"
+        android:drawablePadding="7dp"
+        android:ems="10"
+        android:hint="Enter Ticker Symbol"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:fontFamily="@font/gilroymedium"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/showChartButton"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/background_button"
+        android:fontFamily="@font/gilroybold"
+        android:letterSpacing="0.1"
+        android:text="Show Chart"
+        android:textColor="@color/backgroundwhite"
+        android:textSize="12dp"
+        app:layout_constraintStart_toEndOf="@+id/tickerEditText"
+        app:layout_constraintTop_toTopOf="@id/tickerEditText" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView10"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginTop="32dp"-->
+<!--        android:fontFamily="@font/montserratbold"-->
+<!--        android:text="Today's Hot Pick"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/tickerEditText" />-->
+
+    <!-- Add the horizontal RecyclerView here -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/categoryRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tickerEditText" />
+
+    <TextView
+        android:id="@+id/marketTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/gilroybold"
+        android:text="Top Gainers"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categoryRecyclerView" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/stockProfileRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/marketTitle" />
+    <!--CardView Apple-->
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:id="@+id/cardView3"-->
+<!--        android:layout_width="390dp"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:layout_marginStart="10dp"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:elevation="50dp"-->
+<!--        app:cardBackgroundColor="@color/backgroundwhite"-->
+<!--        app:cardCornerRadius="30dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/tickerEditText">-->
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/profileImage"-->
+<!--                android:layout_width="50dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_marginStart="16dp"-->
+<!--                android:layout_marginTop="24dp"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/profileTicker"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="12dp"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:fontFamily="@font/montserratsemibold"-->
+<!--                android:text=""-->
+<!--                android:textColor="@color/realblack"-->
+<!--                android:textSize="30dp"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/profileImage"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/profileName"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="12dp"-->
+<!--                android:fontFamily="@font/montserratsemibold"-->
+<!--                android:text=""-->
+<!--                android:textColor="@color/lightgrey"-->
+<!--                android:textSize="15dp"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/profileImage"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/profileTicker" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/profilePrice"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:layout_marginEnd="16dp"-->
+<!--                android:fontFamily="@font/montserratsemibold"-->
+<!--                android:text=""-->
+<!--                android:textColor="@color/realblack"-->
+<!--                android:textSize="30dp"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/profileSymbolChanges"-->
+<!--                android:layout_width="25dp"-->
+<!--                android:layout_height="25dp"-->
+
+<!--                app:layout_constraintEnd_toStartOf="@+id/profileChanges"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/profilePrice" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/profileChanges"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginEnd="45dp"-->
+<!--                android:fontFamily="@font/montserratsemibold"-->
+<!--                android:text=""-->
+<!--                android:textColor="@color/green"-->
+<!--                android:textSize="18dp"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/profilePrice" />-->
+
+
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--    </androidx.cardview.widget.CardView>-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

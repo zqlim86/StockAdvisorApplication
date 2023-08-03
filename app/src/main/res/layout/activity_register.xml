@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundwhite"
+    tools:context=".RegisterActivity">
+
+    <!-- Id of this TextView is textView -->
+    <!-- The textColor of this is @color/backgroundwhite -->
+    <!-- The fontFamily of this is @font/montserratbold -->
+    <!-- It is properly constraint vertically and horizontally, so that it doesn't go to the wrong position during runtime. -->
+
+    <!-- Id of this TextView is textView4 -->
+    <!-- The textColor of this is @color/backgroundwhite -->
+    <!-- The fontFamily of this is @font/montserratbold -->
+    <!-- It is properly constraint vertically and horizontally, so that it doesn't go to the wrong position during runtime. -->
+
+    <!-- Id of this EditText Widget is registerName -->
+    <!-- It has the input type of textPersonName -->
+    <!-- The textColor of this is @color/lightpurple -->
+    <!-- The textColorHint of this is also @color/lightpurple -->
+    <!-- It is using the background of @drawable/background_input -->
+    <!-- There is drawable on the left side, using the @drawable/ic_person2 -->
+    <!-- It is properly constraint vertically and horizontally, so that it doesn't go to the wrong position during runtime. -->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="184dp"
+        android:fontFamily="@font/gilroybold"
+        android:text="Create an account"
+        android:textAlignment="center"
+        android:textColor="@color/realblack"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:fontFamily="@font/gilroyregular"
+        android:text="Join StockX and start your trading journey !"
+        android:textColor="@color/realblack"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/registerName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/background_input"
+        android:drawableLeft="@drawable/ic_person2"
+        android:drawablePadding="7dp"
+        android:ems="10"
+        android:hint="Enter Name"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/inputhint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <!-- Id of this EditText Widget is inputEmail -->
+    <!-- It has the input type of textPersonName -->
+    <!-- The textColor of this is @color/lightpurple -->
+    <!-- The textColorHint of this is also @color/lightpurple -->
+    <!-- It is using the background of @drawable/background_input -->
+    <!-- There is drawable on the left side, using the @drawable/ic_email2 -->
+    <!-- It is properly constraint vertically and horizontally, so that it doesn't go to the wrong position during runtime. -->
+    <EditText
+        android:id="@+id/inputEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/background_input"
+        android:drawableLeft="@drawable/ic_email2"
+        android:drawablePadding="7dp"
+        android:ems="10"
+        android:textColorHint="@color/inputhint"
+        android:hint="Enter Email Address"
+        android:textColor="@color/white"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerName" />
+
+    <!-- Id of this EditText Widget is loginPassword -->
+    <!-- It has the input type of textPassword -->
+    <!-- The textColor of this is @color/lightpurple -->
+    <!-- The textColorHint of this is also @color/lightpurple -->
+    <!-- It is using the background of @drawable/background_input -->
+    <!-- There is drawable on the left side, using the @drawable/ic_security2 -->
+    <!-- It is properly constraint vertically and horizontally, so that it doesn't go to the wrong position during runtime. -->
+    <EditText
+        android:id="@+id/loginPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/background_input"
+        android:drawableLeft="@drawable/ic_security2"
+        android:drawablePadding="7dp"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:textColor="@color/white"
+        android:textColorHint="@color/inputhint"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputEmail" />
+
+    <!-- Id of this EditText Widget is inputConfirmPassword -->
+    <!-- It has the input type of textPassword -->
+    <!-- The textColor of this is @color/lightpurple -->
+    <!-- The textColorHint of this is also @color/lightpurple -->
+    <!-- It is using the background of @drawable/background_input -->
+    <!-- There is drawable on the left side, using the @drawable/ic_security2 -->
+    <!-- It is properly constraint vertically and horizontally, so that it doesn't go to the wrong position during runtime. -->
+    <EditText
+        android:id="@+id/inputConfirmPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/background_input"
+        android:drawableLeft="@drawable/ic_security2"
+        android:drawablePadding="7dp"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:textColor="@color/white"
+        android:textColorHint="@color/inputhint"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginPassword" />
+
+    <!-- Id of this TextView is buttonRegister -->
+    <!-- The textColor of this is @color/backgroundwhite -->
+    <!-- It is using the background of @drawable/background_button -->
+    <!--  The fontFamily used is @font/montserratbold -->
+    <!-- It is properly constraint vertically and horizontally, so that it doesn't go to the wrong position during runtime. -->
+
+    <!-- Id of this TextView is linkLogin -->
+    <!-- The textColor of this is @color/backgroundwhite -->
+    <!-- The textStyle of this is italic -->
+    <!-- The textAlignment of this is center -->
+    <!-- It is properly constraint vertically and horizontally, so that it doesn't go to the wrong position during runtime. -->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonRegister"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/background_button"
+        android:fontFamily="@font/montserratbold"
+        android:letterSpacing="0.1"
+        android:text="Register"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputConfirmPassword" />
+
+    <TextView
+        android:id="@+id/linkLogin"
+        android:layout_width="291dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="90dp"
+        android:text="Already have an account? Log in Here."
+        android:textColor="@color/realblack"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRegister" />
+
+    <!-- Id of this TextView is forgotPasswordProgressBar -->
+    <!-- It's visibility is set to invisible -->
+    <!-- It is properly constraint vertically and horizontally, so that it doesn't go to the wrong position during runtime. -->
+    <ProgressBar
+        android:id="@+id/registerProgressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="96dp"
+        android:layout_height="82dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

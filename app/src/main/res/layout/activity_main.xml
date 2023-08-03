@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundwhite"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/mainActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- The ID of the BottomNavigationBar is nav_bar. -->
+        <!-- It uses the background of @drawable/navigationbar_style. -->
+        <!-- It uses the item ripple color of @android:color/transparent. -->
+        <!-- It is properly constraint vertically and horizontally, so that it doesn't go to the wrong position during runtime. -->
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/nav_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/navigationbar_style"
+            android:elevation="2dp"
+            app:itemIconSize="28dp"
+            app:itemIconTint="@drawable/navigationbar_selector"
+            app:itemTextColor="@drawable/navigationbar_selector"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/menu_item" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

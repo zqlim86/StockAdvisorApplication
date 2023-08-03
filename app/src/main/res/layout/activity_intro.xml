@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    tools:context=".IntroActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="304dp"
+        android:fontFamily="@font/gilroybold"
+        android:letterSpacing="0.05"
+        android:text="StockX"
+        android:textColor="@color/realblack"
+        android:textSize="50sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/cardview_bottomview" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="36dp"
+                android:fontFamily="@font/gilroybold"
+                android:text="The next gen of investment with StockX"
+                android:textColor="@color/black"
+                android:textSize="35sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/landingSignUpButton"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/background_button"
+                android:fontFamily="@font/gilroymedium"
+                android:text="Sign Up"
+                android:textColor="@color/backgroundwhite"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/landingLoginButton"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/background_button2"
+                android:fontFamily="@font/gilroymedium"
+                android:text="Log In"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

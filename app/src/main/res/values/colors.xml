@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="darkpurple">#2f3253</color>
+    <color name="backgroundwhite">#F9F5FB</color>
+    <color name="darkpurple2">#373a5d</color>
+    <color name="realblack">#FF000000</color>
+
+
+    <color name="secondaryText">#c8d0db</color>
+    <color name="sellButtonColor">#f28b3c</color>
+    <color name="inputhint">#afb7bf</color>
+    <color name="black">#1b1c1f</color>
+
+    <color name="grey">#1b2530</color>
+    <color name="grey2">#313138</color>
+    <color name="lightblue">#478cd4</color>
+    <color name="white">#f4f5f5</color>
+    <color name="offwhite">#f6f6f6</color>
+    <color name="lightgrey">#848689</color>
+    <color name="icongrey">#6d7279</color>
+    <color name="green">#5fcc4b</color>
+    <color name="red">#b92b28</color>
+
+
+</resources>
